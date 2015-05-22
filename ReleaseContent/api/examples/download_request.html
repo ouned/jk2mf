@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<strong>int</strong> <font color="#2040a0">DownloadRequest</font><font color="4444FF">(</font><strong>void</strong><font color="4444FF">)</font><font color="4444FF">;</font>
+
+<font color="#444444">/*
+================
+vmMain
+
+This is the only way control passes into the module.
+This must be the very first function compiled into the .q3vm file
+================
+*/</font>
+<strong>int</strong> <font color="#2040a0">vmMain</font><font color="4444FF">(</font> <strong>int</strong> <font color="#2040a0">command</font>, <strong>int</strong> <font color="#2040a0">arg0</font>, <strong>int</strong> <font color="#2040a0">arg1</font>, <strong>int</strong> <font color="#2040a0">arg2</font>, <strong>int</strong> <font color="#2040a0">arg3</font>, <strong>int</strong> <font color="#2040a0">arg4</font>, <strong>int</strong> <font color="#2040a0">arg5</font>, <strong>int</strong> <font color="#2040a0">arg6</font>, <strong>int</strong> <font color="#2040a0">arg7</font>, <strong>int</strong> <font color="#2040a0">arg8</font>, <strong>int</strong> <font color="#2040a0">arg9</font>, <strong>int</strong> <font color="#2040a0">arg10</font>, <strong>int</strong> <font color="#2040a0">arg11</font>  <font color="4444FF">)</font> <font color="4444FF"><strong>{</strong></font>
+	<strong>switch</strong> <font color="4444FF">(</font> <font color="#2040a0">command</font> <font color="4444FF">)</font> <font color="4444FF"><strong>{</strong></font>
+	<strong>case</strong> <font color="#2040a0">GAME_INIT</font><font color="4444FF">:</font>
+		<font color="#2040a0">G_InitGame</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font>, <font color="#2040a0">arg1</font>, <font color="#2040a0">arg2</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_SHUTDOWN</font><font color="4444FF">:</font>
+		<font color="#2040a0">G_ShutdownGame</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_CLIENT_CONNECT</font><font color="4444FF">:</font>
+		<strong>return</strong> <font color="4444FF">(</font><strong>int</strong><font color="4444FF">)</font><font color="#2040a0">ClientConnect</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font>, <font color="#2040a0">arg1</font>, <font color="#2040a0">arg2</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_CLIENT_THINK</font><font color="4444FF">:</font>
+		<font color="#2040a0">ClientThink</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_CLIENT_USERINFO_CHANGED</font><font color="4444FF">:</font>
+		<font color="#2040a0">ClientUserinfoChanged</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_CLIENT_DISCONNECT</font><font color="4444FF">:</font>
+		<font color="#2040a0">ClientDisconnect</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_CLIENT_BEGIN</font><font color="4444FF">:</font>
+		<font color="#2040a0">ClientBegin</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font>, <font color="#2040a0">qtrue</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_CLIENT_COMMAND</font><font color="4444FF">:</font>
+		<font color="#2040a0">ClientCommand</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_RUN_FRAME</font><font color="4444FF">:</font>
+		<font color="#2040a0">G_RunFrame</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_CONSOLE_COMMAND</font><font color="4444FF">:</font>
+		<strong>return</strong> <font color="#2040a0">ConsoleCommand</font><font color="4444FF">(</font><font color="4444FF">)</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">BOTAI_START_FRAME</font><font color="4444FF">:</font>
+		<strong>return</strong> <font color="#2040a0">BotAIStartFrame</font><font color="4444FF">(</font> <font color="#2040a0">arg0</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+	<strong>case</strong> <font color="#2040a0">GAME_ROFF_NOTETRACK_CALLBACK</font><font color="4444FF">:</font>
+		<font color="#2040a0">G_ROFF_NotetrackCallback</font><font color="4444FF">(</font> <font color="4444FF">&amp;</font><font color="#2040a0">g_entities</font><font color="4444FF">[</font><font color="#2040a0">arg0</font><font color="4444FF">]</font>, <font color="4444FF">(</font><strong>const</strong> <strong>char</strong> <font color="4444FF">*</font><font color="4444FF">)</font><font color="#2040a0">arg1</font> <font color="4444FF">)</font><font color="4444FF">;</font>
+		<strong>return</strong> <font color="#FF0000">0</font><font color="4444FF">;</font>
+	<font color="#444444">// JK2MF: receiving the JK2MF_DOWNLOAD_REQUEST event</font>
+	<strong>case</strong> <font color="#2040a0">JK2MF_DOWNLOAD_REQUEST</font><font color="4444FF">:</font>
+		<strong>return</strong> <font color="#2040a0">DownloadRequest</font><font color="4444FF">(</font><font color="4444FF">)</font><font color="4444FF">;</font>
+	<font color="4444FF"><strong>}</strong></font>
+	
+	<strong>return</strong> <font color="4444FF">-</font><font color="#FF0000">1</font><font color="4444FF">;</font>
+<font color="4444FF"><strong>}</strong></font>
+
+<strong>int</strong> <font color="#2040a0">DownloadRequest</font><font color="4444FF">(</font><strong>void</strong><font color="4444FF">)</font>
+<font color="4444FF"><strong>{</strong></font>
+	<font color="#2040a0">mfDownloadInfo</font> <font color="#2040a0">downInf</font><font color="4444FF">;</font>
+	<font color="#2040a0">trap_JK2MF_GetDownloadRequestInfo</font><font color="4444FF">(</font><font color="4444FF">&amp;</font><font color="#2040a0">downInf</font><font color="4444FF">)</font><font color="4444FF">;</font>
+	
+	<font color="#444444">// Block a specific file programmatically</font>
+	<strong>if</strong> <font color="4444FF">(</font> <font color="4444FF">!</font><font color="#2040a0">Q_stricmp</font><font color="4444FF">(</font><font color="#2040a0">downInf</font>.<font color="#2040a0">fileName</font>, <font color="#008000">&quot;base/UltraSecretFile.pk3&quot;</font><font color="4444FF">)</font> <font color="4444FF">)</font>
+	<font color="4444FF"><strong>{</strong></font>
+		<font color="#2040a0">trap_SendServerCommand</font><font color="4444FF">(</font><font color="4444FF">-</font><font color="#FF0000">1</font>, <font color="#008000">&quot;print <font color="#77dd77">\&quot;</font>Someone requested base/UltraSecretFile.pk3^1! ^7NOPE^1!^7<font color="#77dd77">\n</font><font color="#77dd77">\&quot;</font>&quot;</font><font color="4444FF">)</font><font color="4444FF">;</font>
+		
+		<font color="#444444">// If this is a UDP request kick the client</font>
+		<strong>if</strong> <font color="4444FF">(</font> <font color="#2040a0">downInf</font>.<font color="#2040a0">clientNum</font> <font color="4444FF">!</font><font color="4444FF">=</font> <font color="#2040a0">CLIENTNUM_UNKNOWN</font> <font color="4444FF">)</font>
+			<font color="#2040a0">trap_DropClient</font><font color="4444FF">(</font><font color="#2040a0">downInf</font>.<font color="#2040a0">clientNum</font>, <font color="#008000">&quot;has been kicked from the server ( requested a secret file! )&quot;</font><font color="4444FF">)</font><font color="4444FF">;</font>
+		
+		<strong>return</strong> <font color="#2040a0">DOWNLOAD_REJECT</font><font color="4444FF">;</font>
+	<font color="4444FF"><strong>}</strong></font>
+
+	<font color="#2040a0">trap_SendServerCommand</font><font color="4444FF">(</font><font color="4444FF">-</font><font color="#FF0000">1</font>, <font color="#2040a0">va</font><font color="4444FF">(</font><font color="#008000">&quot;print <font color="#77dd77">\&quot;</font>%i^1.^7%i^1.^7%i^1.^7%i is requesting a download (via ^1%s^7) for the file ^1'%s^1'^7<font color="#77dd77">\n</font>&quot;</font>
+					      <font color="#008000">&quot;We are going to accept it.<font color="#77dd77">\n</font><font color="#77dd77">\&quot;</font>&quot;</font>, <font color="#2040a0">downInf</font>.<font color="#2040a0">IP</font><font color="4444FF">[</font><font color="#FF0000">0</font><font color="4444FF">]</font>, <font color="#2040a0">downInf</font>.<font color="#2040a0">IP</font><font color="4444FF">[</font><font color="#FF0000">1</font><font color="4444FF">]</font>, <font color="#2040a0">downInf</font>.<font color="#2040a0">IP</font><font color="4444FF">[</font><font color="#FF0000">2</font><font color="4444FF">]</font>, <font color="#2040a0">downInf</font>.<font color="#2040a0">IP</font><font color="4444FF">[</font><font color="#FF0000">3</font><font color="4444FF">]</font>,
+                                              <font color="4444FF">(</font> <font color="#2040a0">downInf</font>.<font color="#2040a0">protocol</font> <font color="4444FF">=</font><font color="4444FF">=</font> <font color="#2040a0">REQUEST_UDP</font> <font color="4444FF">)</font> ? <font color="#008000">&quot;UDP&quot;</font> <font color="4444FF">:</font> <font color="#008000">&quot;HTTP&quot;</font>, <font color="#2040a0">downInf</font>.<font color="#2040a0">fileName</font><font color="4444FF">)</font><font color="4444FF">)</font><font color="4444FF">;</font>
+	
+	<strong>return</strong> <font color="#2040a0">DOWNLOAD_PROCEED</font><font color="4444FF">;</font>
+<font color="4444FF"><strong>}</strong></font>
+</pre>
+</body>
+</html>

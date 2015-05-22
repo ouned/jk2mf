@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="api.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="632" topLine="9" />
+	</File>
+	<File name="common.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="7019" topLine="375" />
+	</File>
+	<File name="common.h" open="1" top="0" tabpos="8">
+		<Cursor position="1924" topLine="66" />
+	</File>
+	<File name="detours.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="5775" topLine="100" />
+	</File>
+	<File name="detours.h" open="1" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="24431" topLine="653" />
+	</File>
+	<File name="main.h" open="1" top="1" tabpos="2">
+		<Cursor position="152" topLine="12" />
+	</File>
+	<File name="mongoose.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="48160" topLine="1549" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,93 @@
+# depslib dependency file v1.0
+1399202060 source:/home/ouned/Desktop/jk2mfsrv/api.cpp
+	"main.h"
+	"api.h"
+	<string.h>
+	<stdarg.h>
+	<stdlib.h>
+	<time.h>
+
+1400591076 /home/ouned/Desktop/jk2mfsrv/main.h
+	<windows.h>
+	<netinet/in.h>
+	<unistd.h>
+	<stdio.h>
+	<time.h>
+	"common.h"
+	"detours.h"
+	"mongoose.h"
+	"api.h"
+
+1400591912 /home/ouned/Desktop/jk2mfsrv/common.h
+
+1399212406 /home/ouned/Desktop/jk2mfsrv/detours.h
+	"common.h"
+	"main.h"
+
+1304319620 /home/ouned/Desktop/jk2mfsrv/mongoose.h
+
+1383997270 /home/ouned/Desktop/jk2mfsrv/api.h
+
+1326718173 source:/home/ouned/Desktop/jk2mfsrv/common.cpp
+	<string.h>
+	<stdarg.h>
+	<ctype.h>
+	<stdlib.h>
+	<pthread.h>
+	"common.h"
+	"main.h"
+
+1399212406 source:/home/ouned/Desktop/jk2mfsrv/detours.cpp
+	<unistd.h>
+	<sys/mman.h>
+	<stdlib.h>
+	<string.h>
+	"detours.h"
+
+1399379472 source:/home/ouned/Desktop/jk2mfsrv/main.cpp
+	"main.h"
+	"api.h"
+	<string.h>
+	<stdarg.h>
+	<stdlib.h>
+	<time.h>
+
+1326719445 source:/home/ouned/Desktop/jk2mfsrv/mongoose.cpp
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<signal.h>
+	<fcntl.h>
+	<time.h>
+	<stdlib.h>
+	<stdarg.h>
+	<assert.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	<stddef.h>
+	<stdio.h>
+	<stdint.h>
+	<windows.h>
+	<process.h>
+	<direct.h>
+	<io.h>
+	<winsock2.h>
+	<stdint.h>
+	<sys/wait.h>
+	<sys/socket.h>
+	<sys/select.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<sys/time.h>
+	<stdint.h>
+	<inttypes.h>
+	<netdb.h>
+	<pwd.h>
+	<unistd.h>
+	<dirent.h>
+	<dlfcn.h>
+	<pthread.h>
+	"mongoose.h"
+	"main.h"
+

@@ -1,0 +1,3 @@
+
+#define JK2VERSION_102 "JK2MP: v1.02mf"
+#define JK2VERSION_104 "JK2MP: v1.04mf"

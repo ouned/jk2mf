@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcxproj", "{DEF744D7-44CD-4AC2-96A2-1236DED6A975}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serverexe", "serverexe\serverexe.vcxproj", "{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "modpass", "serverproxy\serverproxy.vcxproj", "{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975} = {DEF744D7-44CD-4AC2-96A2-1236DED6A975}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug DED|Any CPU = Debug DED|Any CPU
+		Debug DED|Mixed Platforms = Debug DED|Mixed Platforms
+		Debug DED|Win32 = Debug DED|Win32
+		Debug ModPass|Any CPU = Debug ModPass|Any CPU
+		Debug ModPass|Mixed Platforms = Debug ModPass|Mixed Platforms
+		Debug ModPass|Win32 = Debug ModPass|Win32
+		Debug MP|Any CPU = Debug MP|Any CPU
+		Debug MP|Mixed Platforms = Debug MP|Mixed Platforms
+		Debug MP|Win32 = Debug MP|Win32
+		Release Inject|Any CPU = Release Inject|Any CPU
+		Release Inject|Mixed Platforms = Release Inject|Mixed Platforms
+		Release Inject|Win32 = Release Inject|Win32
+		Release Proxy|Any CPU = Release Proxy|Any CPU
+		Release Proxy|Mixed Platforms = Release Proxy|Mixed Platforms
+		Release Proxy|Win32 = Release Proxy|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug DED|Any CPU.ActiveCfg = Debug DED|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug DED|Any CPU.Build.0 = Debug DED|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug DED|Mixed Platforms.ActiveCfg = Debug DED|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug DED|Mixed Platforms.Build.0 = Debug DED|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug DED|Win32.ActiveCfg = Debug DED|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug DED|Win32.Build.0 = Debug DED|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug ModPass|Any CPU.ActiveCfg = TestModPass|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug ModPass|Any CPU.Build.0 = TestModPass|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug ModPass|Mixed Platforms.ActiveCfg = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug ModPass|Mixed Platforms.Build.0 = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug ModPass|Win32.ActiveCfg = Debug MP|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug ModPass|Win32.Build.0 = Debug MP|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug MP|Any CPU.ActiveCfg = Debug MP|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug MP|Mixed Platforms.ActiveCfg = Debug MP|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug MP|Mixed Platforms.Build.0 = Debug MP|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug MP|Win32.ActiveCfg = Debug MP|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Debug MP|Win32.Build.0 = Debug MP|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Inject|Any CPU.ActiveCfg = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Inject|Any CPU.Build.0 = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Inject|Mixed Platforms.ActiveCfg = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Inject|Mixed Platforms.Build.0 = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Inject|Win32.ActiveCfg = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Inject|Win32.Build.0 = Release Inject|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Proxy|Any CPU.ActiveCfg = Release Proxy|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Proxy|Mixed Platforms.ActiveCfg = Release Proxy|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Proxy|Mixed Platforms.Build.0 = Release Proxy|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Proxy|Win32.ActiveCfg = Release Proxy|Win32
+		{DEF744D7-44CD-4AC2-96A2-1236DED6A975}.Release Proxy|Win32.Build.0 = Release Proxy|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug DED|Any CPU.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug DED|Mixed Platforms.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug DED|Mixed Platforms.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug DED|Win32.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug DED|Win32.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug ModPass|Any CPU.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug ModPass|Mixed Platforms.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug ModPass|Mixed Platforms.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug ModPass|Win32.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug ModPass|Win32.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug MP|Any CPU.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug MP|Mixed Platforms.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug MP|Mixed Platforms.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug MP|Win32.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Debug MP|Win32.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Inject|Any CPU.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Inject|Any CPU.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Inject|Mixed Platforms.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Inject|Mixed Platforms.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Inject|Win32.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Inject|Win32.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Proxy|Any CPU.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Proxy|Mixed Platforms.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Proxy|Mixed Platforms.Build.0 = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Proxy|Win32.ActiveCfg = Release EXE|Win32
+		{EFBF55DF-C641-4815-B4D6-87DDE0C46CED}.Release Proxy|Win32.Build.0 = Release EXE|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug DED|Any CPU.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug DED|Mixed Platforms.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug DED|Win32.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug DED|Win32.Build.0 = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug ModPass|Any CPU.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug ModPass|Mixed Platforms.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug ModPass|Mixed Platforms.Build.0 = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug ModPass|Win32.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug ModPass|Win32.Build.0 = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug MP|Any CPU.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug MP|Mixed Platforms.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug MP|Win32.ActiveCfg = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Debug MP|Win32.Build.0 = Debug|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Inject|Any CPU.ActiveCfg = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Inject|Any CPU.Build.0 = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Inject|Mixed Platforms.ActiveCfg = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Inject|Mixed Platforms.Build.0 = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Inject|Win32.ActiveCfg = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Inject|Win32.Build.0 = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Proxy|Any CPU.ActiveCfg = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Proxy|Mixed Platforms.ActiveCfg = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Proxy|Mixed Platforms.Build.0 = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Proxy|Win32.ActiveCfg = ReleaseModPass|Win32
+		{E3FC98EA-CC22-404B-B5B6-B3DCF407EC23}.Release Proxy|Win32.Build.0 = ReleaseModPass|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

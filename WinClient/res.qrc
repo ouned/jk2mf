@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file>jk2mf.png</file>
+    </qresource>
+    <qresource prefix="/files">
+        <file>incl/jk2mfcl21.dll</file>
+        <file>incl/jk2mfcl23.dll</file>
+        <file>incl/jk2mfcl30b1.dll</file>
+        <file>incl/jk2mfcl211.dll</file>
+        <file>incl/winmm.dll</file>
+    </qresource>
+</RCC>
